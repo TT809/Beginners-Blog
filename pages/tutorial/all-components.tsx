@@ -391,7 +391,7 @@ const AllComponents = () => {
                 Video Player
               </Text>
               <b>Demo</b>
-              <VideoPlayer url="/public/videos/mov_bbb.mp4" />
+              <VideoPlayer url="/public/videos/mov_bbb.mp4" WEBSITE_URL="https://beginners-blog-pguybj4f5-tt809.vercel.app/" />
               <b>How to use</b>
               <CodeBlock code={HowToUseVideo} className="mb-5 mt-3" />
             </section>
