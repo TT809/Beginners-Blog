@@ -60,7 +60,7 @@ export const RUPALI: IAuthor = {
 
 // This can your company name / your name etc for SEO purposes
 export const WEBSITE_NAME: string = 'Beginners Blog';
-export const WEBSITE_URL: string = 'https://Beginners-Blog/';
+export const WEBSITE_URL: string = 'https://beginners-blog.vercel.app/';
 
 /**
  * This is the main navigation setup.
