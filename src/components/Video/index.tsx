@@ -1,6 +1,5 @@
 import ReactPlayer from "react-player";
 import { transformImagePaths, combineClasses } from "../../utils/utils";
-import { WEBSITE_URL } from "../../../BLOG_CONSTANTS/_BLOG_SETUP";
 
 interface iVideoPlayer {
   url?: string;

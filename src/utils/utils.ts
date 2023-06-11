@@ -2,7 +2,7 @@ import { THEMES } from "../shared/enums";
 import { useRouter } from "next/router";
 import { SORTED_ARTICLES_BY_DATE } from "../../BLOG_CONSTANTS/_ARTICLES_LIST";
 import { iArticle, iSEO } from "../shared/interfaces";
-import { WEBSITE_NAME, WEBSITE_URL } from "../../BLOG_CONSTANTS/_BLOG_SETUP";
+import { WEBSITE_NAME } from "../../BLOG_CONSTANTS/_BLOG_SETUP";
 import { MOCK_ARTICLES_LIST } from "../constants/mocks";
 import { GAEvent } from "../../google";
 
@@ -162,7 +162,6 @@ export const CREATE_SEO_CONFIG = (PAGE_SEO: iSEO) => {
     typeof window !== "undefined" && window.location.origin
       ? window.location.origin
       : "";
-  const LOCAL_URL = IS_DEV_MODE ? origin : WEBSITE_URL ? WEBSITE_URL : origin;
   const LOCAL_PATH = ARTICLE_DETAILS
     ? transformPath(ARTICLE_DETAILS.path)
     : router.asPath;
@@ -171,11 +170,11 @@ export const CREATE_SEO_CONFIG = (PAGE_SEO: iSEO) => {
     ARTICLE_DETAILS?.preview?.shortIntro || PAGE_SEO.description;
 
   const keywords = PAGE_SEO?.keywords || ARTICLE_DETAILS?.preview?.tags;
-  const ogUrl = `${LOCAL_URL}${LOCAL_PATH}`;
+  const ogUrl = `${LOCAL_PATH}`;
 
   const ogImage = PAGE_SEO.ogImage
-    ? `${LOCAL_URL}${transformImagePaths(PAGE_SEO?.ogImage)}`
-    : `${LOCAL_URL}${
+    ? `${transformImagePaths(PAGE_SEO?.ogImage)}`
+    : `${
         ARTICLE_DETAILS?.preview.thumbnail
           ? transformImagePaths(ARTICLE_DETAILS?.preview.thumbnail)
           : null
@@ -242,13 +241,11 @@ export const CREATE_SEO_CONFIG = (PAGE_SEO: iSEO) => {
  */
 export const webShare = () => {
   const pageTitle = document.title;
-  const url =
-    typeof window !== "undefined" ? window.location.href : WEBSITE_URL;
-
+  
   GAEvent({
     action: "share_clicked",
     event_category: "click",
-    label: url,
+
     value: null,
   });
 
@@ -258,8 +255,7 @@ export const webShare = () => {
     if (typeof window !== "undefined" && navigator) {
       navigator
         .share({
-          text: pageTitle,
-          url: url,
+          text: pageTitle
         })
         .catch(console.error);
       return true;

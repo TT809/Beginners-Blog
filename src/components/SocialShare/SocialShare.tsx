@@ -1,17 +1,14 @@
 import { BsLinkedin, BsLink45Deg, BsXLg } from "react-icons/bs";
 import { AiFillTwitterCircle, AiFillFacebook } from "react-icons/ai";
-import { WEBSITE_URL } from "../../../BLOG_CONSTANTS/_BLOG_SETUP";
 import { combineClasses } from "../../utils/utils";
 import { useEffect, useState } from "react";
 import { GAEvent } from "../../../google";
 
 const SocialShare = () => {
-  const url =
-    typeof window !== "undefined" ? window.location.href : WEBSITE_URL;
 
-  const twitterShare = `http://twitter.com/share?text=Check out this article!! &url=${url}&hashtags=webdevelopment,javacript,javascriptdaily,webdevelopmenttutorial,tutorial`;
-  const facebookShare = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-  const linkedinShare = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=Check out this article!!&source=LinkedIn`;
+  const twitterShare = `http://twitter.com/share?text=Check out this article!! &url=&hashtags=webdevelopment,javacript,javascriptdaily,webdevelopmenttutorial,tutorial`;
+  const facebookShare = `https://www.facebook.com/sharer/sharer.php?u=`;
+  const linkedinShare = `https://www.linkedin.com/shareArticle?mini=true&url=&title=Check out this article!!&source=LinkedIn`;
 
   const trackShareEvent = (social: string) => {
     GAEvent({
@@ -24,7 +21,7 @@ const SocialShare = () => {
 
   const copyLink = () => {
     if (typeof window !== "undefined" && navigator) {
-      navigator.clipboard.writeText(url);
+      navigator.clipboard.writeText;
       setShowCopiedAlert(true);
     }
     trackShareEvent("copy_clipboard_clicked");

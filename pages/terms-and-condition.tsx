@@ -2,12 +2,11 @@
 import { ImageSize, TextAlign, ListType } from "../src/shared/enums";
 import { PageLayout, Text, List, Image, LinkTo, Seperator, Slider  } from "../src/components";
 import { iSEO } from "../src/shared/interfaces";
-import { WEBSITE_URL } from "../BLOG_CONSTANTS/_BLOG_SETUP";
 
 const TermsAndConditions = () => {
     const PAGE_SEO: iSEO = {
         title: 'Terms and conditions',
-        description: `These terms and conditions outline the rules and regulations for the use of Website, located at ${WEBSITE_URL}.`,
+        description: `These terms and conditions outline the rules and regulations for the use of Website, located at Beginners-Blog.com.`,
         keywords: 'webexpx, contact us, webexpe13@gmail.com, next js blog template',
         author: 'Mayur Nalwala, Rupali Yadav'
     }    
@@ -19,7 +18,7 @@ const TermsAndConditions = () => {
                 </Text>
                 <Text p >
                     Welcome to [Website_Name]! <br /><br />
-                    These terms and conditions outline the rules and regulations for the use of [Company_Name]'s Website, located at [Website_URL]. <br />
+                    These terms and conditions outline the rules and regulations for the use of [Company_Name]'s Website, located at Beginners-Blog.com. <br />
                     By accessing this website we assume you accept these terms and conditions. Do not continue to use [Website_Name] if you do not agree to take all of the terms and conditions stated on this page. <br />
                     The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.
                 </Text>

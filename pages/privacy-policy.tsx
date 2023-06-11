@@ -17,7 +17,7 @@ const TermsAndConditions = () => {
                     Privacy Policy
                 </Text>
                 <Text p>
-                    At [Website_Name], accessible from [Website_URL], one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by [Website_Name] and how we use it. <br />
+                    At [Website_Name], accessible from Beginners-Blog.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by [Website_Name] and how we use it. <br />
                     If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us. <br />
                     This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in [Website_Name]. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the Privacy Policy Generator.
                 </Text>

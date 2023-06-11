@@ -60,7 +60,6 @@ export const RUPALI: IAuthor = {
 
 // This can your company name / your name etc for SEO purposes
 export const WEBSITE_NAME: string = 'Beginners Blog';
-export const WEBSITE_URL: string = 'https://beginners-blog.vercel.app/';
 
 /**
  * This is the main navigation setup.
@@ -162,7 +161,6 @@ export const DEFAULT_SEO: iSEO = {
     title: "Beginners Blog",
     description: "A Blog for Beginners",
     keywords: "Blog, next js, template, next js blog, blog setup, typescript, nextjs typescript, react js blog template, responsive blog template",
-    url: WEBSITE_URL,
     author: `${Thiel.name}, ${RUPALI.name}`,
     twitterHandle: '@BeginnersBlog',
     ogImage: '/public/images/og-image.jpg'
