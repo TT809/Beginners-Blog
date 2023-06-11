@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/_BLOG_SETUP.tsx" }
+  ],
+  "directoryListing": true
+}
