@@ -14,9 +14,11 @@ const Home = () => {
         <div className="container text-center px-3">
           <Text title className='text-3xl'>
             Blog template using Next Js, Typescript and Taildwind CSS
+            <a href='./blog/First-Website.tsx'></a>
+            Hier ist der Link für den ersten Blog Artikel
           </Text>
           <div>
-            <a href='./blog/First-Website.tsx'></a>
+            <h1>Test Test Test Test Test</h1>
           </div>
 
           <Text p className="mt-3 text-xl">
