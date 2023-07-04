@@ -15,6 +15,9 @@ const Home = () => {
           <Text title className='text-3xl'>
             Blog template using Next Js, Typescript and Taildwind CSS
           </Text>
+          <div>
+            <a href='./blog/First-Website.tsx'></a>
+          </div>
 
           <Text p className="mt-3 text-xl">
             This is a simple and static component based blog template for everyone.
