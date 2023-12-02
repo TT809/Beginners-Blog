@@ -1,0 +1,26 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  CI_NODE_INDEX: "1"  # Definiere, welcher Runner TypeScript kompiliert (falls mehrere vorhanden sind)
+
+before_script:
+  - npm install
+
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+
+deploy:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp -r build/* public/
+  artifacts:
+    paths:
+      - public

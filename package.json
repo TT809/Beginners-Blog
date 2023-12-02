@@ -5,12 +5,12 @@
   "scripts": {
     "start": "next dev",
     "build": "next build",
-    "open-browser": "start http://localhost3010",
+    "open-browser": "start http://localhost:3010",
     "dev": "npm run open-browser && next dev -p 3010",
     "start-prod": "next start",
     "lint": "next lint",
     "export": "next export",
-    "out": "next build && next export"
+    "out": "npm run build && next export"
   },
   "dependencies": {
     "@uiw/react-textarea-code-editor": "^1.4.4",
