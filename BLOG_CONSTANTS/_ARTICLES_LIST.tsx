@@ -61,7 +61,7 @@ const ARTICLES_LIST: iArticle[] = [
         // the author object you created in _BLOG_SETUP file
         author: Thiel,
         date: "Juni 10 2023",
-        articleTitle: "Beginners Blog: Website-Programmierung | Schritt-für-Schritt",
+        articleTitle: "FRATT: Website-Programmierung | Schritt-für-Schritt",
         shortIntro: "Das ist ein Beginnerkurs für Website-Entwicklung, indem du Schritt für Schritt deine eigene Website programmierst.",
         tags: "programmieren, Website, Code, Beginners Blog",
         thumbnail: "/public/imp_assets/tutorials/how-to-write-first-article.svg",
